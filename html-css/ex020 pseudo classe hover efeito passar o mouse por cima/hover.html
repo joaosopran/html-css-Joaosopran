@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo hover</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{ 
+            display: block;
+            color: rgb(26, 231, 91);
+        }
+        div:hover{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>exemplo hover</h1>
+    <p>passa o mouse no texto</p>
+    <div>
+        passe o mouse aqui
+        <p>texto escondido</p> <!-- fiz um paragrafo dentro de uma div-->
+    </div>
+</body>
+</html>
+

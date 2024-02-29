@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            background-color: chartreuse;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav > a{
+            background-color: chocolate;
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0%;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article > aside{
+            text-align: center;
+        }
+        section > nav{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- cabeçalho-->
+        <h1> Meu site</h1>
+        <nav> <!-- tag de navegação-->
+            <a href="youtube">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- conteudo principal-->
+        <section id="Assuntos"> <!-- tag de seções do conteudo principal-->
+                <section id="Noticias">
+                    <nav>
+                        Esportes politica tecnologia
+                    </nav>
+                    <article>
+                        <h2>Noticias do Brasil</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni voluptatibus unde praesentium et doloremque non iure, ipsa quaerat quia vero nihil quasi distinctio deleniti est quam nesciunt itaque illum fugit!</p>
+                    </article>
+                </section>
+            <article> <!-- tag de artigos de cada seção-->
+                <aside>
+                    Artigo escrito por joao
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- rodapé-->
+        <p> Desenvolvido pelo Cb Sopran</p>
+    </footer>
+</body>
+</html>

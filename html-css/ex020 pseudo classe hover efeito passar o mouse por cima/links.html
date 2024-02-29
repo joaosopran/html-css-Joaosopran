@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element ==   EU ADICIONO UMA FORMATAÇÃO QUE NAO VAI ESTAR NO CODIGO RAIZ APENA NO CSS
+        >  = filho
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /* pseudo link para nao ficar sublinhado*/
+        }
+        a:visited{ /* para marcar se o link foi visitado*/
+            color: blue;
+        }
+        a:hover{ /* para sublinhar quando passo o mouse em cima*/
+            text-decoration: underline;
+        }
+        .principal{
+            background-color: rgb(211, 162, 211);
+        }
+
+        .principal::after{/* EXEMPLO DE FORMATAÇÃO APENAS NO CSS*/
+            content: ' ↠';
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" class="principal">youtube</a> Youtube</li>
+        <li><a href="https://www.twitch.tv/" target="_blank">twitch</a> Twitch</li>
+        <li><a href="https://estudante.estacio.br/login" target="_blank">estacio</a> Estacio</li>
+    </ul>
+</body>
+</html>
