@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem no fundo</title>
+    <style>
+
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            /* Com background-size (cover) + background-attachment (fixed) = o texto ira rolar para baixo sem fazer alteração na imagem de fundo*/
+            background-size: cover;
+            background-attachment: fixed;
+
+            /* shorthand (ajudinha) para todos os códigos acima
+                color > image > position > repeat > [size] > attachment           
+            
+            */
+            /* Abaixo está a shorthand para melhorar o código acima*/
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover; /* os navegadores ainda não está aceitando o background-size: cover direto na shorthand*/
+        }
+
+        main{
+            background-color: white;
+            max-width: 700px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>testando imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio nihil, eligendi aliquam suscipit quisquam qui? Magni quis quidem nam eligendi ipsa unde voluptatem, dolor id, voluptates, quia porro placeat.</p>
+
+
+    </main>
+</body>
+</html>
